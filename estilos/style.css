@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    background-color: #323640;
+}
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mod {
+    padding: 10px;
+}
+
+#icon {
+    color: lightgreen;
+}
+
+
+
+
+
+/*media query*/
+
+@media screen and (min-width:300px) and (max-width:992px) {
+
+
+    header > img {
+        padding: 10px;
+    }
+
+    #lin {
+        text-decoration: none;
+        color: white;
+        border: 1px 1px 1px;
+        border-radius: 5px;
+        padding: 8px 10px;
+        background-color: rgb(0, 140, 255);
+    }
+
+    #login {
+        text-align: end;
+        
+    }
+
+    #escond {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+    }
+
+}
