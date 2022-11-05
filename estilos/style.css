@@ -24,8 +24,12 @@ body {
     padding-left: 90px;
 }
 
-.navega {
+#burguer {
+    display: none;
+}
 
+.navega {
+    display: flex;
     padding-right: 60px;
 }
 
@@ -55,12 +59,14 @@ a:hover {
     padding-top: 40px;
     color: rgb(173, 173, 173);
     padding-bottom: 40px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .p2 {
     color: rgb(173, 173, 173);
     flex-direction: column;
+    padding-bottom: 40px;
+    font-size: 0.8em;
 }
 
 .p3 {
@@ -72,23 +78,72 @@ a:hover {
 #icon {
     padding-right: 10px;
     color: lightgreen;
+    font-size: 1.5em;
+}
+
+#add {
+    color: white;
+    border: 1px 1px;
+    background-color: rgb(0, 119, 255);
+    padding: 18px;
+    border-radius: 5px;
+}
+
+#add:hover {
+    background-color: rgb(0, 81, 255);
 }
 
 
 /*media query*/
 
-@media screen and (min-width:300px) and (max-width:992px) {
+@media screen and (max-width: 992px) {
 
-    header > img {
-        padding: 10px;
+    .cabecalho {
+        display: flex;
     }
 
-    .am {
+    .img {
+        padding-left: 35px;
+    }
+
+    #burguer {
+        color: white;
+        font-size: 1.8em;
+        text-align: end;
+        display: block;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    #burguer:hover {
+        color: rgb(143, 143, 143);
+    }
+
+    #itens {
         display: none;
+        position: absolute;
+        top: 9vh;
+        right: 0px;
+        width: 50vw;
+        height: 90vh;
+        background-color: #323640;
     }
 
-    main {
-        text-align: center;
+    .navega {
+        flex-direction: column;
+        padding: 20px;
     }
 
+    .titulo {
+        font-size: 2em;
+
+    }
+
+    .p2 {
+        font-size: 1em;
+    }
+
+    #icon {
+        font-size: 1.7em;
+    }
 }

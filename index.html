@@ -7,17 +7,20 @@
     <title>Tururu - Melhore sua comunidade</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header class="cabecalho">
-        <img src="./imagens/Vector.png" alt="bot imagem" class="img">
-        <nav class="navega">
-            <a href="#" class="am">Comunidade</a>
-            <a href="#" class="am">Comandos</a>
-            <a href="#" class="am">Tutorial</a>
-            <a href="#" class="am">Support</a>
-        </nav>
+        <img src="./imagens/tururu.png" alt="bot imagem" class="img">
+        <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <nav class="navega">
+                <a href="#" class="am">DashBoard</a>
+                <a href="#" class="am">Comandos</a>
+                <a href="#" class="am">Tutorial</a>
+                <a href="#" class="am">Suporte</a>
+            </nav>
+        </menu>
     </header>
 
     <main class="main">
@@ -42,7 +45,18 @@
                 </div>
                 
             </div>
-            <p><a href="#">Adicionar ao Discord</a></p>
+            <div class="invite">
+                <p><a href="#" id="add">Adicionar ao Discord</a></p>
+            </div>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
